@@ -685,6 +685,16 @@ body { font-family:'Montserrat',sans-serif; color:var(--text); background:var(--
     <h2>Flash informations</h2>
     <p class="flash-subtitle">Mises à jour en temps réel par le conducteur de travaux.</p>
 
+    <!-- Flash infos statiques — toujours visibles en premier -->
+    <div class="flash-item urgent" style="margin-bottom:24px;">
+      <div class="flash-date-col">Vendredi 17 Juillet 2026</div>
+      <div class="flash-body">
+        <div class="flash-title">Coupure fibre — Intervention baie informatique</div>
+        <div class="flash-detail">Une intervention au niveau de la baie informatique est programmée le vendredi 17 juillet à partir de 8h30. Cette opération entraînera une coupure de la connexion internet tout au long de la journée, uniquement dans les locaux de l'UEAJ. Les autres espaces ne seront pas impactés.</div>
+      </div>
+      <span class="flash-badge">Urgent</span>
+    </div>
+
     <div class="planning-block" style="margin-top:0; margin-bottom:32px;">
       <div class="eyebrow">Détail des interventions</div>
       <h3 class="planning-title">Détail des interventions</h3>
@@ -693,13 +703,11 @@ body { font-family:'Montserrat',sans-serif; color:var(--text); background:var(--
       </div>
     </div>
 
-        <div class="flash-list" id="flash-list">
-      <div class="loading"><div class="spinner"></div>Chargement…</div>
-    </div>
-  </div>
-</div>
+    <!-- Flash infos dynamiques (Google Sheet) -->
+    <div class="flash-list" id="flash-list"></div>
 
-<!-- ══════════════ PLANNING ══════════════ -->
+  </div>
+</div> -->
 <div id="s-planning" class="section">
   <div class="flash-section">
     <div class="eyebrow">Organisation du chantier</div>
